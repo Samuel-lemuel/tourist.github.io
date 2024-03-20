@@ -1,0 +1,64 @@
+.content {
+    background-image: url(fondC.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%; 
+    position: relative;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 9px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    padding-right: 4opx;
+    text-align: right;
+}
+
+ul li {
+    margin: 10px;
+}
+
+ul li a {
+    position: relative;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.content .centered-title {
+    font-size: 500%;
+    font-weight: lighter;
+}
+main {
+    padding: 20px;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.image {
+    overflow: hidden;
+}
+
+.image img {
+    width: 100%;
+    height: 280px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover img {
+    transform: scale(2.2);
+}
